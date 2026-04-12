@@ -18,7 +18,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <img src={IMAGES.logo} alt="Its Programmer" className="h-10 w-10 rounded-full" />
+          <img src={IMAGES.logo} alt="Its Programmer" className="h-10 w-10 rounded-full filter brightness-95 contrast-110 saturate-110" />
           <span className="font-heading text-lg font-bold tracking-wider text-primary">
             IT'S PROGRAMMER
           </span>

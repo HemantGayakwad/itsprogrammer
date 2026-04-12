@@ -18,7 +18,7 @@ const CourseCard = ({ id, title, image, description }: CourseCardProps) => (
     className="card-3d rounded-lg overflow-hidden border border-border bg-card"
   >
     <div className="relative overflow-hidden h-48">
-      <img src={image} alt={title} className="w-full h-full object-cover" loading="lazy" />
+      <img src={image} alt={title} className="w-full h-full object-cover transition-all duration-500 filter brightness-90 contrast-110 saturate-110 hover:brightness-100 hover:scale-105" loading="lazy" />
       <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
     </div>
     <div className="p-6">
