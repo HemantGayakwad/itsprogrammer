@@ -67,7 +67,7 @@ const Index = () => (
         <SectionTitle title="Seminars & Events" subtitle="Knowledge sharing sessions across the country" />
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { img: IMAGES.seminar1, title: "Tech Summit 2024", desc: "500+ attendees" },
+            { img: IMAGES.seminar1, title: "Web Development Webinar", desc: "500+ attendees" },
             { img: IMAGES.seminar2, title: "Code Workshop", desc: "Hands-on learning" },
             { img: IMAGES.seminar3, title: "Hackathon Event", desc: "Team collaboration" },
           ].map((s, i) => (
@@ -90,7 +90,7 @@ const Index = () => (
       <div className="container">
         <SectionTitle title="Awards & Recognition" />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-          {["Best EdTech 2024", "Innovation Award", "Top Mentor Award", "Excellence in Teaching"].map((award, i) => (
+          {["Best Guider", "Innovation Award", "Top Mentor Award", "Generative Ai Engineer"].map((award, i) => (
             <motion.div key={i} initial={{ opacity: 0, rotateY: 90 }} whileInView={{ opacity: 1, rotateY: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1, duration: 0.6 }} className="text-center p-6 rounded-lg border border-border bg-card hover:box-glow transition-shadow">
               <Award className="h-10 w-10 text-primary mx-auto mb-3" />
               <p className="text-xs font-medium text-foreground">{award}</p>
@@ -109,9 +109,9 @@ const Index = () => (
             <img src={IMAGES.ceo} alt="CEO" className="w-40 h-40 rounded-full border-4 border-primary object-cover animate-pulse-glow filter brightness-95 contrast-110 saturate-110" loading="lazy" />
           </div>
           <div>
-            <h3 className="font-heading text-xl font-bold text-foreground">Rahul Sharma</h3>
+            <h3 className="font-heading text-xl font-bold text-foreground">Hemant Gayakwad</h3>
             <p className="text-primary text-sm font-medium mt-1">Founder & CEO</p>
-            <p className="text-muted-foreground text-sm mt-3">With 10+ years in the tech industry, Rahul founded It's Programmer to bridge the gap between academic learning and industry demands.</p>
+            <p className="text-muted-foreground text-sm mt-3">With 6+ years in the tech industry, Hemant founded It's Programmer to bridge the gap between academic learning and industry demands.</p>
           </div>
         </motion.div>
       </div>
