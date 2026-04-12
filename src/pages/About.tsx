@@ -4,9 +4,9 @@ import SectionTitle from "@/components/SectionTitle";
 import { IMAGES } from "@/data/images";
 
 const team = [
-  { name: "Rahul Sharma", role: "Founder & CEO", image: IMAGES.ceo, desc: "10+ years in tech, passionate about education and empowering developers." },
-  { name: "Amit Patel", role: "Lead Instructor", image: IMAGES.team1, desc: "Full-stack expert with experience at top MNCs. Specializes in React & Node.js." },
-  { name: "Priya Singh", role: "Curriculum Designer", image: IMAGES.team2, desc: "EdTech specialist creating industry-aligned courses for maximum impact." },
+  { name: "Hemant Gayakwad", role: "Founder & CEO", image: IMAGES.ceo, desc: "6+ years in tech, passionate about education and empowering developers." },
+  { name: "Akash Mahajan", role: "Lead Instructor", image: IMAGES.team1, desc: "Relational Team Head have 5+ years of experience to Manage the Team" },
+  { name: "Vaishnavi Salunkhe", role: "Carrier Mentor", image: IMAGES.team2, desc: "EdTech specialist creating industry-aligned courses for maximum impact. And Guied Students for brightest Future." },
 ];
 
 const About = () => (
