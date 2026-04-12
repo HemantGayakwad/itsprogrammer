@@ -32,7 +32,7 @@ const About = () => (
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {team.map((m, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.15 }} whileHover={{ y: -8 }} className="text-center p-6 rounded-lg border border-border bg-card hover:box-glow transition-all">
-              <img src={m.image} alt={m.name} className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-primary object-cover" loading="lazy" />
+              <img src={m.image} alt={m.name} className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-primary object-cover filter brightness-95 contrast-110 saturate-110 transition-all duration-300 hover:brightness-105 hover:scale-105" loading="lazy" />
               <h3 className="font-heading text-base font-bold text-foreground">{m.name}</h3>
               <p className="text-primary text-xs font-medium mt-1">{m.role}</p>
               <p className="text-muted-foreground text-sm mt-3">{m.desc}</p>
