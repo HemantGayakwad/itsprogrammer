@@ -1,6 +1,4 @@
-import frontendImg from "@/assets/course-frontend.jpg";
-import backendImg from "@/assets/course-backend.jpg";
-import fullstackImg from "@/assets/course-fullstack.jpg";
+import { IMAGES } from "@/data/images";
 
 export interface Course {
   id: string;
@@ -17,7 +15,7 @@ export const courses: Course[] = [
   {
     id: "frontend-domination",
     title: "Frontend Domination",
-    image: frontendImg,
+    image: IMAGES.courseFrontend,
     description: "Master React, HTML, CSS, JavaScript, TypeScript and modern frontend frameworks to build stunning user interfaces.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     duration: "6 Months",
@@ -36,7 +34,7 @@ export const courses: Course[] = [
   {
     id: "backend-domination",
     title: "Backend Domination",
-    image: backendImg,
+    image: IMAGES.courseBackend,
     description: "Learn Node.js, Express, databases, APIs, authentication and server-side architecture from scratch.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     duration: "6 Months",
@@ -55,7 +53,7 @@ export const courses: Course[] = [
   {
     id: "fullstack-webdev",
     title: "FullStack WEBDEV",
-    image: fullstackImg,
+    image: IMAGES.courseFullstack,
     description: "The complete package — master both frontend and backend to become a full-stack web developer.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     duration: "12 Months",

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/assets/logo.jpg";
+import { IMAGES } from "@/data/images";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -18,7 +18,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Its Programmer" className="h-10 w-10 rounded-full" />
+          <img src={IMAGES.logo} alt="Its Programmer" className="h-10 w-10 rounded-full" />
           <span className="font-heading text-lg font-bold tracking-wider text-primary">
             IT'S PROGRAMMER
           </span>

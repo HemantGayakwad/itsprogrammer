@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.jpg";
+import { IMAGES } from "@/data/images";
 
 const Footer = () => (
   <footer className="border-t border-border bg-card py-12">
     <div className="container grid gap-8 md:grid-cols-3">
       <div className="flex flex-col gap-3">
         <div className="flex items-center gap-3">
-          <img src={logo} alt="Its Programmer" className="h-10 w-10 rounded-full" />
+          <img src={IMAGES.logo} alt="Its Programmer" className="h-10 w-10 rounded-full" />
           <span className="font-heading text-lg font-bold text-primary">IT'S PROGRAMMER</span>
         </div>
         <p className="text-sm text-muted-foreground max-w-xs">
