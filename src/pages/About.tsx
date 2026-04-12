@@ -1,0 +1,82 @@
+import { motion } from "framer-motion";
+import Layout from "@/components/Layout";
+import SectionTitle from "@/components/SectionTitle";
+import ceoImg from "@/assets/ceo.jpg";
+import team1 from "@/assets/team1.jpg";
+import team2 from "@/assets/team2.jpg";
+
+const team = [
+  { name: "Rahul Sharma", role: "Founder & CEO", image: ceoImg, desc: "10+ years in tech, passionate about education and empowering developers." },
+  { name: "Amit Patel", role: "Lead Instructor", image: team1, desc: "Full-stack expert with experience at top MNCs. Specializes in React & Node.js." },
+  { name: "Priya Singh", role: "Curriculum Designer", image: team2, desc: "EdTech specialist creating industry-aligned courses for maximum impact." },
+];
+
+const About = () => (
+  <Layout>
+    <section className="py-20">
+      <div className="container">
+        <SectionTitle title="About Us" subtitle="Our mission is to create world-class developers" />
+
+        {/* Video */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto rounded-lg overflow-hidden border border-border box-glow mb-16"
+        >
+          <div className="aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="About Its Programmer"
+              className="w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </motion.div>
+
+        {/* Story */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto text-center mb-20"
+        >
+          <p className="text-muted-foreground leading-relaxed">
+            It's Programmer was founded with a single goal — to make programming accessible and career-oriented for every aspiring developer. 
+            With hands-on projects, expert mentors, and a community of 500+ alumni, we've helped students land roles at top tech companies. 
+            Our curriculum covers Java, Python, C++, and full-stack web development with real-world applications.
+          </p>
+        </motion.div>
+
+        {/* Team */}
+        <SectionTitle title="Our Team" subtitle="Meet the people behind It's Programmer" />
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          {team.map((m, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.15 }}
+              whileHover={{ y: -8 }}
+              className="text-center p-6 rounded-lg border border-border bg-card hover:box-glow transition-all"
+            >
+              <img
+                src={m.image}
+                alt={m.name}
+                className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-primary object-cover"
+                loading="lazy"
+              />
+              <h3 className="font-heading text-base font-bold text-foreground">{m.name}</h3>
+              <p className="text-primary text-xs font-medium mt-1">{m.role}</p>
+              <p className="text-muted-foreground text-sm mt-3">{m.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  </Layout>
+);
+
+export default About;
