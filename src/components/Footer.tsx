@@ -47,7 +47,7 @@ const Footer = () => (
         transition={{ delay: 0.2 }}
       >
         <h4 className="font-heading text-sm font-semibold mb-4 text-primary">Contact</h4>
-        <p className="text-sm text-muted-foreground">Email: info@itsprogrammer.com</p>
+        <p className="text-sm text-muted-foreground">Email: itsprogrammer15@gmail.com</p>
         <p className="text-sm text-muted-foreground">Phone: +91 9960717665</p>
       </motion.div>
     </div>
