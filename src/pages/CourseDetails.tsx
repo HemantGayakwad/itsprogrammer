@@ -197,8 +197,8 @@ const CourseDetails = () => {
               </div>
             </motion.div>
 
-            {/* What You'll Learn - quick overview */}
-            <motion.h2
+
+
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
