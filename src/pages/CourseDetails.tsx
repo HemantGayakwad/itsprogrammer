@@ -197,32 +197,6 @@ const CourseDetails = () => {
               </div>
             </motion.div>
 
-            {/* What You'll Learn - quick overview */}
-            <motion.h2
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              className="font-heading text-2xl font-bold text-foreground mb-6"
-            >
-              What You'll Learn
-            </motion.h2>
-            <div className="grid md:grid-cols-2 gap-4 mb-12">
-              {course.details.map((item, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.08 }}
-                  whileHover={{ scale: 1.02, x: 4 }}
-                  className="flex items-start gap-3 p-4 rounded-lg border border-border bg-card hover:box-glow transition-all duration-300 cursor-default"
-                >
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground">{item}</span>
-                </motion.div>
-              ))}
-            </div>
-
             {/* Detailed Curriculum */}
             {course.curriculum && course.curriculum.length > 0 && (
               <>
